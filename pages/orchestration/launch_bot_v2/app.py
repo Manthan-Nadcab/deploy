@@ -22,7 +22,7 @@ def get_controller_configs():
 
 
 def filter_hummingbot_images(images):
-    """Filter images to only show Hummingbot-related ones."""
+    """Filter images to only show Mybot-related ones."""
     hummingbot_images = []
     pattern = r'.+/hummingbot:'
 
@@ -43,7 +43,7 @@ def launch_new_bot(bot_name, image_name, credentials, selected_controllers, max_
         st.warning("You need to define the bot name.")
         return False
     if not image_name:
-        st.warning("You need to select the hummingbot image.")
+        st.warning("You need to select the Mybot image.")
         return False
     if not selected_controllers:
         st.warning("You need to select the controllers configs. Please select at least one controller "

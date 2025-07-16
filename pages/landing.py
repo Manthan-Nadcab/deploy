@@ -63,7 +63,7 @@ st.markdown("""
 # Hero Section
 st.markdown("""
 <div style="text-align: center; padding: 2rem 0;">
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">🤖 Hummingbot Dashboard</h1>
+    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">🤖 MYBOT Dashboard</h1>
     <p style="font-size: 1.2rem; color: #888; margin-bottom: 2rem;">
         Your Command Center for Algorithmic Trading Excellence
     </p>
@@ -280,33 +280,33 @@ st.divider()
 # Community & Resources
 col1, col2 = st.columns([2, 1])
 
-with col1:
-    st.markdown("### 🎬 Learn & Explore")
+# with col1:
+#     st.markdown("### 🎬 Learn & Explore")
     
-    st.video("https://youtu.be/7eHiMPRBQLQ?si=PAvCq0D5QDZz1h1D")
+#     st.video("https://youtu.be/7eHiMPRBQLQ?si=PAvCq0D5QDZz1h1D")
 
-with col2:
-    st.markdown("### 💬 Join Our Community")
+# with col2:
+#     st.markdown("### 💬 Join Our Community")
     
-    st.markdown("""
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                padding: 1.5rem; border-radius: 15px; color: white;">
-        <h4>🌟 Connect with Traders</h4>
-        <p>Join thousands of algorithmic traders sharing strategies and insights!</p>
-        <br>
-        <a href="https://discord.gg/hummingbot" target="_blank" 
-           style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; 
-                  border-radius: 8px; text-decoration: none; color: white; font-weight: bold;">
-           💬 Join Discord
-        </a>
-        <br><br>
-        <a href="https://github.com/hummingbot/dashboard" target="_blank"
-           style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; 
-                  border-radius: 8px; text-decoration: none; color: white; font-weight: bold;">
-           🐛 Report Issues
-        </a>
-    </div>
-    """, unsafe_allow_html=True)
+#     st.markdown("""
+#     <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+#                 padding: 1.5rem; border-radius: 15px; color: white;">
+#         <h4>🌟 Connect with Traders</h4>
+#         <p>Join thousands of algorithmic traders sharing strategies and insights!</p>
+#         <br>
+#         <a href="https://discord.gg/hummingbot" target="_blank" 
+#            style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; 
+#                   border-radius: 8px; text-decoration: none; color: white; font-weight: bold;">
+#            💬 Join Discord
+#         </a>
+#         <br><br>
+#         <a href="https://github.com/hummingbot/dashboard" target="_blank"
+#            style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; 
+#                   border-radius: 8px; text-decoration: none; color: white; font-weight: bold;">
+#            🐛 Report Issues
+#         </a>
+#     </div>
+#     """, unsafe_allow_html=True)
 
 # Footer stats
 st.markdown("---")
