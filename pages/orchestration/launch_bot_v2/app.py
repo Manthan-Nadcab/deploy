@@ -22,7 +22,7 @@ def get_controller_configs():
 
 
 def filter_hummingbot_images(images):
-    """Filter images to only show Mybot-related ones."""
+    """Filter images to only show Nadcab-related ones."""
     hummingbot_images = []
     pattern = r'.+/hummingbot:'
 
@@ -43,7 +43,7 @@ def launch_new_bot(bot_name, image_name, credentials, selected_controllers, max_
         st.warning("You need to define the bot name.")
         return False
     if not image_name:
-        st.warning("You need to select the Mybot image.")
+        st.warning("You need to select the Nadcab image.")
         return False
     if not selected_controllers:
         st.warning("You need to select the controllers configs. Please select at least one controller "
@@ -133,32 +133,34 @@ with st.container(border=True):
             )
 
     with col3:
-        try:
-            all_images = backend_api_client.docker.get_available_images("hummingbot")
-            available_images = filter_hummingbot_images(all_images)
+        # Hide Nadcab Image field from UI; set default image directly
+        image_name = "hummingbot/hummingbot:latest"
+        # try:
+        #     all_images = backend_api_client.docker.get_available_images("hummingbot")
+        #     available_images = filter_hummingbot_images(all_images)
 
-            if not available_images:
-                # Fallback to default if no hummingbot images found
-                available_images = ["hummingbot/hummingbot:latest"]
+        #     if not available_images:
+        #         # Fallback to default if no hummingbot images found
+        #         available_images = ["hummingbot/hummingbot:latest"]
 
-            # Ensure default image is in the list
-            default_image = "hummingbot/hummingbot:latest"
-            if default_image not in available_images:
-                available_images.insert(0, default_image)
+        #     # Ensure default image is in the list
+        #     default_image = "hummingbot/hummingbot:latest"
+        #     if default_image not in available_images:
+        #         available_images.insert(0, default_image)
 
-            image_name = st.selectbox(
-                "Mybot Image",
-                options=available_images,
-                index=0,
-                key="image_select"
-            )
-        except Exception as e:
-            st.error(f"Failed to fetch available images: {e}")
-            image_name = st.text_input(
-                "Mybot Image",
-                value="hummingbot/hummingbot:latest",
-                key="image_input"
-            )
+        #     image_name = st.selectbox(
+        #         "Nadcab Image",
+        #         options=available_images,
+        #         index=0,
+        #         key="image_select"
+        #     )
+        # except Exception as e:
+        #     st.error(f"Failed to fetch available images: {e}")
+        #     image_name = st.text_input(
+        #         "Nadcab Image",
+        #         value="hummingbot/hummingbot:latest",
+        #         key="image_input"
+        #     )
 
 # Risk Management Section
 with st.container(border=True):

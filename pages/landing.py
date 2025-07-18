@@ -63,7 +63,7 @@ st.markdown("""
 # Hero Section
 st.markdown("""
 <div style="text-align: center; padding: 2rem 0;">
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">🤖 MYBOT Dashboard</h1>
+    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">🤖 NADCAB BOT Dashboard</h1>
     <p style="font-size: 1.2rem; color: #888; margin-bottom: 2rem;">
         Your Command Center for Algorithmic Trading Excellence
     </p>

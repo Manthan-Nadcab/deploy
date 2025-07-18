@@ -318,7 +318,7 @@ def render_bot_card(bot_name):
 
 
 # Page Header
-st.title("🦅 Mybot Instances")
+st.title("🦅 Nadcab Instances")
 
 # Auto-refresh controls
 col1, col2, col3 = st.columns([3, 1, 1])
